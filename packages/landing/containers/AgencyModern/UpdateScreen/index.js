@@ -15,12 +15,12 @@ import TiltShape from '../TiltShape';
 import SectionWrapper from './updateScreen.style';
 import { SCREENSHOTS } from 'common/src/data/SaasModern';
 
-const UpdateScreen = ({ secTitleWrapper, secText, secHeading }) => {
+const UpdateScreen = ({ sectionWrapper, secTitleWrapper, secText, secHeading }) => {
   return (
-    <SectionWrapper>
+      <SectionWrapper>
       <TiltShape />
       <Container>
-        <Box {...secTitleWrapper}>
+        <Box {...secTitleWrapper} as="section" id="developers_section">
           <Heading {...secHeading} content="Super simple APIs that  you can build on" />
  <Text {...secText} content="See why so many developers love to dabble in our sandbox" />
         </Box>
@@ -56,7 +56,11 @@ UpdateScreen.propTypes = {
 };
 
 UpdateScreen.defaultProps = {
-  secTitleWrapper: {
+ secWrapper: {
+    mt: ['60px', '80px'],
+    mb: ['60px', '80px'],
+  },
+ secTitleWrapper: {
     mb: ['60px', '80px'],
   },
   secText: {

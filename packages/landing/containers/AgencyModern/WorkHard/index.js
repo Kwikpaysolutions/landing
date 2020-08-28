@@ -16,7 +16,7 @@ import SectionWrapper, {
   ListGroup,
 } from './workHard.style';
 import data from 'common/src/data/AgencyModern';
-import illustration from 'common/src/assets/image/agencyModern/work-hard-illustration.png';
+import illustration from 'common/src/assets/image/agencyModern/easy_pay.png';
 import Tick from 'common/src/assets/image/agencyModern/tick-circle.png';
 
 const WorkHard = () => {

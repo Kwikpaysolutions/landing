@@ -102,8 +102,8 @@ const PricingSection = ({
     <Box {...sectionWrapper} id="pricing_section">
       <Container>
         <Box {...secTitleWrapper}>
-          <Text {...secText} />
           <Heading {...secHeading} />
+          <Text {...secText} />
           <PricingButtonWrapper>
             <Button
               title="Monthly Plan"
@@ -219,24 +219,25 @@ PricingSection.defaultProps = {
     mb: ['50px', '75px'],
   },
   secText: {
-    content: 'PRICING PLAN',
+    content: 'Start accepting payments in hours not weeks.',
     as: 'span',
     display: 'block',
     textAlign: 'center',
-    fontSize: '14px',
+    fontSize: '18px',
     letterSpacing: '0.15em',
-    fontWeight: '700',
-    color: '#5268db',
-    mb: '10px',
+    fontWeight: '500',
+    color: '#cccccc',
+    mb: '40px',
   },
   secHeading: {
-    content: 'What’s our monthly pricing subscription',
+    content: 'Pricing with no hidden fees',
     textAlign: 'center',
-    fontSize: ['20px', '24px'],
-    fontWeight: '500',
+    fontSize: ['48px', '48px'],
+    fontWeight: '600',
     color: 'headingColor',
     letterSpacing: '-0.025em',
-    mb: '0',
+    lineHeight: '1.5',
+    mb: '20px',
   },
   col: {
     width: [1, 1 / 2, 1 / 2, 1 / 3],

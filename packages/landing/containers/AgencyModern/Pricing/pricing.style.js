@@ -43,13 +43,14 @@ const PricingList = styled.div``;
 
 const ListItem = styled.div`
   display: flex;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   &:last-child {
     margin-bottom: 0;
   }
   .price_list_icon {
     color: #18d379;
     margin-right: 10px;
+    padding-bottom: 5px;
   }
 `;
 

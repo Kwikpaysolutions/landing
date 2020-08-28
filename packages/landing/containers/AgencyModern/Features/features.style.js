@@ -5,7 +5,7 @@ const SectionWrapper = styled.div`
   padding: 100px 0 120px;
   overflow: hidden;
   @media only screen and (max-width: 1440px) {
-    padding: 100px 0 30px;
+    padding: 100px 0 60px;
   }
   @media only screen and (max-width: 1024px) {
     padding: 20px 0 0;
@@ -69,7 +69,7 @@ export const ContentWrapper = styled.div`
       line-height: 1.5;
       font-weight: 600;
       letter-spacing: 0.5px;
-      max-width: 550px;
+      max-width: 560px;
       @media only screen and (max-width: 1440px) {
         margin-bottom: 15px;
         font-size: 36px;

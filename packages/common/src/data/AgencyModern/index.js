@@ -43,7 +43,7 @@ export const data = {
     },
     {
       label: 'Developers',
-      path: '#developers',
+      path: '#developers_section',
       offset: '70',
     },
     {

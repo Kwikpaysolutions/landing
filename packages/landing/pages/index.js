@@ -53,8 +53,8 @@ export default () => {
           <Features />
           <WorkHard />
           <UltimateFeature />
-          <UpdateScreen />
           <PricingSection />
+          <UpdateScreen />
           <Customer />
           <News />
           <Contact />

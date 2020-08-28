@@ -108,11 +108,11 @@ const PricingSection = ({
       <Container>
         <Box {...secTitleWrapper}>
           <Fade bottom cascade>
-            <Text {...secText} content="PRICING PLAN" />
             <Heading
               {...secHeading}
-              content="What’s our monthly pricing subscription"
+              content="Flexible Pricing to Scale Any Business"
             />
+            <Text {...secText} content="Start accepting payments in hours not weeks." />
             <SwitchWrapper>
               <Switch
                 labelPosition="bottom"
@@ -286,15 +286,15 @@ PricingSection.defaultProps = {
     as: 'span',
     display: 'block',
     textAlign: 'center',
-    fontSize: '14px',
-    letterSpacing: '0.15em',
+    fontSize: '18px',
+    letterSpacing: '0.5px',
     fontWeight: '700',
-    color: '#eb4d4b',
+    color: '#cccccc',
     mb: '10px',
   },
   secHeading: {
     textAlign: 'center',
-    fontSize: ['20px', '24px'],
+    fontSize: ['48px', '48px'],
     fontWeight: '400',
     color: 'headingColor',
     letterSpacing: '-0.025em',

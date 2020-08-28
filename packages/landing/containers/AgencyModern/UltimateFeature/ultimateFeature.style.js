@@ -3,7 +3,7 @@ import { themeGet } from '@styled-system/theme-get';
 
 const SectionWrapper = styled.section`
   background-color: #fefefe;
-  padding: 70px 0;
+  padding: 80px 0px 140px 0px;
 `;
 
 export const SectionTitle = styled.div`
