@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import navBg from 'common/src/assets/image/agencyModern/nav-bg.png';
+
 
 const NavbarWrapper = styled.header`
   width: 100%;
@@ -56,13 +56,13 @@ export const MenuArea = styled.nav`
         font-weight: 400;
         transition: all 0.3s ease;
         &:hover {
-          color: ${themeGet('colors.menu', '#FF825C')};
+          color: ${themeGet('colors.menu', '#11ad84')};
         }
       }
       &.is-current {
-        background: transparent url(${navBg}) no-repeat center bottom / contain;
+        background: transparent ;
         a {
-          color: ${themeGet('colors.menu', '#FF825C')};
+          color: ${themeGet('colors.menu', '#11ad84')};
         }
       }
       @media only screen and (max-width: 1366px) {

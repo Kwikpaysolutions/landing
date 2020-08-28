@@ -23,12 +23,12 @@ const Banner = () => {
         <BannerContent>
           <Heading
             as="h1"
-            content="Build your audience &amp; grow your business online smarter"
+            content="Connect with more customers &amp; grow your business"
           />
 
           <Text
             className="banner-caption"
-            content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly. We respect our customer opinions."
+            content="Kwikpay's Open Commerce API supports all major payment processors, credit, gift and debit cards, Echecks, and most popular digital wallets in a single, seamless integration."
           />
 
           <Subscribe>
@@ -38,11 +38,11 @@ const Banner = () => {
               iconPosition="left"
               aria-label="email"
             />
-            <Button title="Subscribe" type="submit" />
+            <Button title="Get Started" type="submit" />
           </Subscribe>
 
           <SponsoredBy>
-            <Text className="sponsoredBy" content="Sponsored by:" />
+            <Text className="sponsoredBy" content="Integrations:" />
             <ImageGroup>
               <Image src={paypal} alt="Paypal" />
               <Image src={google} alt="Google" />

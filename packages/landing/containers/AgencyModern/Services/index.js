@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import Container from 'common/src/components/UI/ContainerTwo';
+import Container from 'common/src/components/UI/Container';
 import Image from 'common/src/components/Image';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
@@ -16,8 +16,8 @@ const Services = () => {
       <Container>
         <Fade up delay={100}>
           <SectionHeader>
-            <Heading content="Business start with great features" />
-            <Text content="Build an incredible workplace and grow your business with all-in-one platform with amazing contents." />
+            <Heading content="We make it easy to accept payments" />
+            <Text content="Give your customers a friction-free checkout experience via any channel." />
           </SectionHeader>
         </Fade>
         <ServiceWrapper>

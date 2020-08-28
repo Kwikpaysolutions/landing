@@ -49,6 +49,7 @@ Logo.defaultProps = {
   logoWrapperStyle: {
     display: 'inline-block',
     mr: '1rem',
+    pb: '5px',
     'a:hover,a:focus': {
       textDecoration: 'none',
     },

@@ -40,24 +40,24 @@ export const Content = styled.div`
   }
 
   h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.52;
-    letter-spacing: -1px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
     @media only screen and (max-width: 1440px) {
-      font-size: 30px;
+      font-size: 36px;
     }
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      font-size: 24px;
+      font-size: 28px;
     }
     @media only screen and (max-width: 768px) {
-      font-size: 24px;
+      font-size: 26px;
       text-align: center;
       margin-top: 15px;
     }
   }
   p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 42px;
     @media only screen and (min-width: 1024px) and (max-width: 1366px) {
       line-height: 32px;
@@ -73,7 +73,7 @@ export const Content = styled.div`
   .explore {
     color: ${themeGet('colors.linkColor')};
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 42px;
     margin-top: 30px;
     display: inline-flex;

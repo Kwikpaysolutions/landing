@@ -6,7 +6,7 @@ import bannerImg from 'common/src/assets/image/agencyModern/banner2.png';
 
 const BannerWrapper = styled.div`
   background-image: url(${bannerImg});
-  background-color: #f0ded5;
+  background-color: #ffffff;
   background-size: 100%;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@ const BannerWrapper = styled.div`
     min-height: 100vh;
   }
   @media only screen and (max-width: 1099px) {
-    background: #f0ded5;
+    background: #ffffff;
     background-image: none;
     min-height: auto;
   }

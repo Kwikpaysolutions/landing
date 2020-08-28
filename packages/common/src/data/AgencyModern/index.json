@@ -1,12 +1,7 @@
 {
   "leftMenuItems": [
     {
-      "label": "Home",
-      "path": "#home",
-      "offset": "70"
-    },
-    {
-      "label": "Services",
+      "label": "Why us",
       "path": "#services",
       "offset": "70"
     },
@@ -16,8 +11,28 @@
       "offset": "70"
     },
     {
-      "label": "News",
+      "label": "Fees",
+      "path": "#pricing_section",
+      "offset": "70"
+    },
+    {
+      "label": "Developers",
+      "path": "#developers_section",
+      "offset": "70"
+    },
+    {
+      "label": "Contact",
+      "path": "#contact",
+      "offset": "70"
+    },
+    {
+      "label": "Blog",
       "path": "#news",
+      "offset": "70"
+    }
+    {
+      "label": "Support: +1 (800) 566-6003",
+      "path": "#",
       "offset": "70"
     }
   ],
@@ -28,19 +43,14 @@
       "offset": "70"
     },
     {
-      "label": "Sign Up",
+      "label": "Get Started",
       "path": "#",
       "offset": "70"
     }
   ],
   "mobileMenuItems": [
     {
-      "label": "Home",
-      "path": "#home",
-      "offset": "70"
-    },
-    {
-      "label": "Services",
+      "label": "Why us",
       "path": "#services",
       "offset": "70"
     },
@@ -50,8 +60,28 @@
       "offset": "70"
     },
     {
-      "label": "News",
+      "label": "Fees",
+      "path": "#pricing_section",
+      "offset": "70"
+    },
+    {
+      "label": "Developers",
+      "path": "#developers_section",
+      "offset": "70"
+    },
+    {
+      "label": "Contact",
+      "path": "#contact",
+      "offset": "70"
+    },
+    {
+      "label": "Blog",
       "path": "#news",
+      "offset": "70"
+    },
+    {
+      "label": "Support: +1 (800) 566-6003",
+      "path": "#",
       "offset": "70"
     },
     {
@@ -66,21 +96,39 @@
     }
   ],
   "services": [
-    {
+ {
       "id": 1,
-      "thumbnail_url": "../../assets/image/agencyModern/features/1.png",
+      "thumbnail_url": "../../assets/image/agencyModern/features/1.svg",
       "title": "For Individuals",
       "description": "We are commited to provide proper business solutions with reasonable pricing."
     },
     {
       "id": 2,
-      "thumbnail_url": "../../assets/image/agencyModern/features/2.png",
+      "thumbnail_url": "../../assets/image/agencyModern/features/2.svg",
       "title": "For Team",
       "description": "A day to day report about your ongoing business for proper understanding."
     },
     {
       "id": 3,
-      "thumbnail_url": "../../assets/image/agencyModern/features/3.png",
+      "thumbnail_url": "../../assets/image/agencyModern/features/3.svg",
+      "title": "For Company",
+      "description": "Proper Content Management is important to find out the real clients for your agencies."
+    }
+    {
+      "id": 4,
+      "thumbnail_url": "../../assets/image/agencyModern/features/4.svg",
+      "title": "For Individuals",
+      "description": "We are commited to provide proper business solutions with reasonable pricing."
+    },
+    {
+      "id": 5,
+      "thumbnail_url": "../../assets/image/agencyModern/features/5.svg",
+      "title": "For Team",
+      "description": "A day to day report about your ongoing business for proper understanding."
+    },
+    {
+      "id": 6,
+      "thumbnail_url": "../../assets/image/agencyModern/features/6.svg",
       "title": "For Company",
       "description": "Proper Content Management is important to find out the real clients for your agencies."
     }
@@ -193,6 +241,12 @@
       "comments_count": 18
     }
   ],
+
+  "joinSlack": {
+  "logo":"../../assets/image/agencyModern/slack.png",
+  "title": "Start your 14 day free trial today",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore."
+},
   "aboutUs": [
     {
       "id": 1,

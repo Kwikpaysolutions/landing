@@ -2,63 +2,65 @@ import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-import { agencyTheme } from 'common/src/theme/agency';
+import { theme } from 'common/src/theme/agencyModern';
 import { ResetCSS } from 'common/src/assets/css/style';
-import { GlobalStyle, AgencyWrapper } from '../containers/Agency/agency.style';
-import Navbar from '../containers/Agency/Navbar';
-import BannerSection from '../containers/Agency/BannerSection';
-import FeatureSection from '../containers/Agency/FeatureSection';
-import AboutUsSection from '../containers/Agency/AboutUsSection';
-import WorkHistory from '../containers/Agency/WorkHistory';
-import BlogSection from '../containers/Agency/BlogSection';
-import TestimonialSection from '../containers/Agency/TestimonialSection';
-import TeamSection from '../containers/Agency/TeamSection';
-import VideoSection from '../containers/Agency/VideoSection';
-import NewsletterSection from '../containers/Agency/NewsletterSection';
-import QualitySection from '../containers/Agency/QualitySection';
-import Footer from '../containers/Agency/Footer';
+import {
+  GlobalStyle,
+  ContentWrapper,
+} from '../containers/AgencyModern/agencyModern.style';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import FaqSection from '../containers/Agency/FaqSection';
+import Navbar from '../containers/AgencyModern/Navbar';
+import Banner from '../containers/AgencyModern/Banner';
+import Services from '../containers/AgencyModern/Services';
+import Features from '../containers/AgencyModern/Features';
+import WorkHard from '../containers/AgencyModern/WorkHard';
+import UltimateFeature from '../containers/AgencyModern/UltimateFeature';
+import Payment from '../containers/AgencyModern/Payment';
+import PricingSection from '../containers/AgencyModern/PricingSection';
+import Customer from '../containers/AgencyModern/Customer';
+import UpdateScreen from '../containers/AgencyModern/UpdateScreen';
+import News from '../containers/AgencyModern/News';
+import Contact from '../containers/AgencyModern/Contact';
+import Subscribe from '../containers/AgencyModern/Subscribe';
+import Footer from '../containers/AgencyModern/Footer';
 
 export default () => {
   return (
-    <ThemeProvider theme={agencyTheme}>
+    <ThemeProvider theme={theme}>
       <Fragment>
-        {/* Start agency head section */}
         <Head>
-          <title>Agency | A react next landing page</title>
-          <meta name="theme-color" content="#10ac84" />
-          <meta name="Description" content="React next landing page" />
+          <title>KwikPay Solutions | The Better Way Of Taking Payments</title>
+          <meta name="theme-color" content="#FF825C" />
+          <meta name="Description" content="KwikPay Solutions" />
+
           {/* Load google fonts */}
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+            href="https://fonts.googleapis.com/css?family=B612:400,400i,700,700i|DM+Sans:400,400i,500,500i,700,700i&display=swap"
             rel="stylesheet"
           />
         </Head>
         <ResetCSS />
         <GlobalStyle />
-        {/* End of agency head section */}
-        {/* Start agency wrapper section */}
-        <AgencyWrapper>
+        <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
-          <BannerSection />
-          <FeatureSection />
-          <AboutUsSection />
-          <WorkHistory />
-          <BlogSection />
-          <QualitySection />
-          <VideoSection />
-          <TestimonialSection />
-          <TeamSection />
-          <FaqSection />
-          <NewsletterSection />
+          <Banner />
+          <Services />
+          <Payment />
+          <Features />
+          <WorkHard />
+          <UltimateFeature />
+          <UpdateScreen />
+          <PricingSection />
+          <Customer />
+          <News />
+          <Contact />
+          <Subscribe />
           <Footer />
-        </AgencyWrapper>
-        {/* End of agency wrapper section */}
+        </ContentWrapper>
       </Fragment>
     </ThemeProvider>
   );

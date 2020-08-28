@@ -20,8 +20,8 @@ const UltimateFeature = () => {
     <SectionWrapper id="features">
       <Container>
         <SectionTitle>
-          <Heading content="Ultimate features you must appreciate" />
-          <Text content="Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred." />
+          <Heading content="Innovative and robust features" />
+          <Text content="We have the tools and expertise to help your business grow." />
         </SectionTitle>
 
         <FeatureWrapper>

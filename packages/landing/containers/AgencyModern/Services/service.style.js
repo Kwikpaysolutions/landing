@@ -27,20 +27,21 @@ export const SectionHeader = styled.header`
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 1.9;
-    margin-bottom: 7px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 10px;
 
     @media only screen and (max-width: 991px) {
-      font-size: 30px;
+      font-size: 38px;
       margin-bottom: 10px;
     }
     @media only screen and (max-width: 767px) {
-      font-size: 28px;
+      font-size: 32px;
     }
     @media screen and (max-width: 480px) {
-      font-size: 24px;
+      font-size: 28px;
       line-height: 30px;
       margin-bottom: 20px;
     }
@@ -49,18 +50,18 @@ export const SectionHeader = styled.header`
   p {
     font-family: 'DM Sans';
     font-weight: 400;
-    font-size: 15px;
+    font-size: 22px;
     line-height: 2;
     margin-bottom: 0;
-    max-width: 500px;
+    max-width: 760px;
     margin: 0 auto;
     width: 100%;
     @media only screen and (max-width: 1440px) {
-      font-size: 16px;
+      font-size: 22px;
       line-height: 1.6;
     }
     @media only screen and (max-width: 991px) {
-      font-size: 15px;
+      font-size: 22px;
       line-height: 28px;
     }
   }
@@ -116,13 +117,13 @@ export const ServiceWrapper = styled.div`
       margin: 0 0 14px;
       font-family: 'DM Sans';
       font-weight: 700;
-      font-size: 18px;
+      font-size: 24px;
       line-height: 30px;
       @media only screen and (max-width: 1440px) {
         margin: 0 0 5px;
       }
       @media only screen and (max-width: 1360px) {
-        font-size: 18px;
+        font-size: 22px;
       }
       @media only screen and (max-width: 768px) {
         text-align: center;
@@ -135,14 +136,14 @@ export const ServiceWrapper = styled.div`
     p {
       margin: 0;
       font-family: 'DM Sans';
-      font-size: 15px;
+      font-size: 18px;
       line-height: 30px;
       color: ${themeGet('colors.text', '#294859')};
       @media only screen and (max-width: 1440px) {
         font-size: 16px;
       }
       @media only screen and (max-width: 1360px) {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 26px;
       }
       @media only screen and (max-width: 768px) {

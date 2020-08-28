@@ -1,98 +1,146 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
-
-import Container from 'common/src/components/UI/ContainerTwo';
-import Heading from 'common/src/components/Heading';
-import Image from 'common/src/components/Image';
-import Link from 'common/src/components/Link';
+import PropTypes from 'prop-types';
+import Link from 'next/link';
+import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
-import List from 'common/src/components/List';
+import Image from 'common/src/components/Image';
+import Heading from 'common/src/components/Heading';
+import Select from 'common/src/components/Select';
+import Container from 'common/src/components/UI/Container';
+import SocialProfile from '../SocialProfile';
+import FooterWrapper, { List, ListItem } from './footer.style';
+import { menuWidget, Language_NAMES } from 'common/src/data/Ride';
+import { SOCIAL_PROFILES } from 'common/src/data/Ride';
+import AppImage from 'common/src/assets/image/ride/footerapp.svg';
+import PlaystoreImage from 'common/src/assets/image/ride/footerplay.svg';
 
-import FooterWrapper, {
-  FooterInner,
-  CopyrightInfo,
-  FooterWidget,
-  Nav,
-} from './footer.style';
-import LogoImage from 'common/src/assets/image/agencyModern/logo.png';
-
-import data from 'common/src/data/AgencyModern';
-
-const Footer = () => {
+const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
   return (
-    <FooterWrapper>
-      <Container>
-        <FooterInner>
-          <CopyrightInfo>
-            <Fade up delay={100}>
-              <Image src={LogoImage} alt="Logo" />
-              <p>
-                <Link href="#">Terms of use</Link> |{' '}
-                <Link href="#">Privacy</Link>
-              </p>
-              <Text
-                className="copyright"
-                content="Copyright by 2019 Redq, Inc"
-              />
-            </Fade>
-          </CopyrightInfo>
-
-          <FooterWidget>
-            <Fade up delay={200}>
-              <Heading as="h4" content="About Us" />
-              <Nav>
-                {data.aboutUs.map(item => (
-                  <Link key={item.id} href="#">
-                    {item.title}
-                  </Link>
-                ))}
-              </Nav>
-            </Fade>
-          </FooterWidget>
-
-          <FooterWidget>
-            <Fade up delay={300}>
-              <Heading as="h4" content="Our Information" />
-              <Nav>
-                {data.ourInformation.map(item => (
-                  <Link key={item.id} href="#">
-                    {item.title}
-                  </Link>
-                ))}
-              </Nav>
-            </Fade>
-          </FooterWidget>
-
-          <FooterWidget>
-            <Fade up delay={400}>
-              <Heading as="h4" content="My Account" />
-              <Nav>
-                {data.myAccount.map(item => (
-                  <Link key={item.id} href="#">
-                    {item.title}
-                  </Link>
-                ))}
-              </Nav>
-            </Fade>
-          </FooterWidget>
-
-          <FooterWidget>
-            <Fade up delay={500}>
-              <Heading as="h4" content="Connect" />
-              <Nav>
-                {data.social.map(item => (
-                  <Link key={item.id} href="#">
-                    <Image src={item.icon} alt="Facebook" />
-                    {item.title}
-                  </Link>
-                ))}
-              </Nav>
-            </Fade>
-          </FooterWidget>
-        </FooterInner>
+    <FooterWrapper id="footerSection">
+      <Container noGutter mobileGutter width="1200px">
+        <Box className="row" {...row}>
+          <Box {...colOne}>
+            <Heading content="Language" {...titleStyle} />
+            <Select
+              options={Language_NAMES}
+              placeholder="English"
+              className="Language_search_select"
+              aria-label="language switcher"
+            />
+            <Heading
+              content="Download The App"
+              {...titleStyle}
+              className="appDownload"
+            />
+            <Box className="imageWrapper">
+              <Link href="#">
+                <a>
+                  <Image src={AppImage} alt="App Image" />
+                </a>
+              </Link>
+              <Link href="#">
+                <a>
+                  <Image src={PlaystoreImage} alt="PlaystoreImage Image" />
+                </a>
+              </Link>
+            </Box>
+          </Box>
+          {/* End of footer logo column */}
+          <Box {...colTwo}>
+            {menuWidget.map(widget => (
+              <Box className="col" {...col} key={widget.id}>
+                <Heading content={widget.title} {...titleStyle} />
+                <List>
+                  {widget.menuItems.map(item => (
+                    <ListItem key={`list__item-${item.id}`}>
+                      <Link href={item.url}>
+                        <a className="ListItem">{item.text}</a>
+                      </Link>
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
+            ))}
+          </Box>
+          {/* End of footer List column */}
+        </Box>
+        <Box className="row copyRight" {...row}>
+          <Text
+            content="@2020 KwikPay Solutions Inc."
+            className="copyRightText"
+          />
+          <SocialProfile
+            className="footer_social"
+            items={SOCIAL_PROFILES}
+            iconSize={18}
+          />
+        </Box>
       </Container>
     </FooterWrapper>
   );
+};
+
+// Footer style props
+Footer.propTypes = {
+  row: PropTypes.object,
+  col: PropTypes.object,
+  colOne: PropTypes.object,
+  colTwo: PropTypes.object,
+  titleStyle: PropTypes.object,
+  textStyle: PropTypes.object,
+};
+
+// Footer default style
+Footer.defaultProps = {
+  // Footer row default style
+  row: {
+    flexBox: true,
+    flexWrap: 'wrap',
+    ml: '-4px',
+    mr: '-4px',
+  },
+  // Footer col one style
+  colOne: {
+    width: ['100%', '30%', '33%', '33%'],
+    mb: ['30px', 0],
+    pl: ['0px', 0],
+    pr: ['0px', '0px', 0],
+  },
+  // Footer col two style
+  colTwo: {
+    width: ['100%', '70%', '67%', '67%'],
+    flexBox: true,
+    flexWrap: 'wrap',
+  },
+  // Footer col default style
+  col: {
+    width: ['100%', 1 / 3, 1 / 3, 1 / 3],
+    pl: [0, '15px'],
+    pr: [0, '15px'],
+    mb: ['30px', '30px'],
+  },
+  // widget title default style
+  titleStyle: {
+    color: '#FFFFFF',
+    fontSize: ['18px', '20px', '20px', '22px', '22px'],
+    fontWeight: '700',
+    lineHeight: '1.34',
+    mb: ['15px', '18px', '18px', '20px', '30px'],
+    fontFamily: ' DM Sans',
+  },
+  // Default logo size
+  logoStyle: {
+    width: '128px',
+    mb: '15px',
+  },
+  // widget text default style
+  textStyle: {
+    color: '#FFFFFF',
+    fontSize: '16px',
+    mb: '12px',
+    fontWeight: '600',
+    fontFamily: 'DM Sans',
+  },
 };
 
 export default Footer;

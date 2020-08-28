@@ -1,12 +1,21 @@
-import serviceIcon1 from 'common/src/assets/image/agencyModern/services/1.png';
-import serviceIcon2 from 'common/src/assets/image/agencyModern/services/2.png';
-import serviceIcon3 from 'common/src/assets/image/agencyModern/services/3.png';
+import serviceIcon1 from 'common/src/assets/image/agencyModern/services/1.svg';
+import serviceIcon2 from 'common/src/assets/image/agencyModern/services/2.svg';
+import serviceIcon3 from 'common/src/assets/image/agencyModern/services/3.svg';
+import serviceIcon4 from 'common/src/assets/image/agencyModern/services/4.svg';
+import serviceIcon5 from 'common/src/assets/image/agencyModern/services/5.svg';
+import serviceIcon6 from 'common/src/assets/image/agencyModern/services/6.svg';
 import featureIcon1 from 'common/src/assets/image/agencyModern/features/1.png';
 import featureIcon2 from 'common/src/assets/image/agencyModern/features/2.png';
 import featureIcon3 from 'common/src/assets/image/agencyModern/features/3.png';
 import featureIcon4 from 'common/src/assets/image/agencyModern/features/4.png';
 import featureIcon5 from 'common/src/assets/image/agencyModern/features/5.png';
 import featureIcon6 from 'common/src/assets/image/agencyModern/features/6.png';
+import { ic_monetization_on } from 'react-icons-kit/md/ic_monetization_on';
+import { ic_settings } from 'react-icons-kit/md/ic_settings';
+import { pieChart } from 'react-icons-kit/icomoon/pieChart';
+import { briefcase } from 'react-icons-kit/fa/briefcase';
+import Screenshot1 from '../../assets/image/agencyModern/dash-3.png';
+import Screenshot2 from '../../assets/image/agencyModern/dash-4.png';
 import news1 from 'common/src/assets/image/agencyModern/news/1.png';
 import news2 from 'common/src/assets/image/agencyModern/news/2.png';
 import news3 from 'common/src/assets/image/agencyModern/news/3.png';
@@ -15,15 +24,10 @@ import dribbble from 'common/src/assets/image/agencyModern/icons/dribbble.png';
 import github from 'common/src/assets/image/agencyModern/icons/github.png';
 import twitter from 'common/src/assets/image/agencyModern/icons/twitter.png';
 
-const data = {
+export const data = {
   leftMenuItems: [
     {
-      label: 'Home',
-      path: '#home',
-      offset: '70',
-    },
-    {
-      label: 'Services',
+      label: 'Why Kwikpay',
       path: '#services',
       offset: '70',
     },
@@ -33,8 +37,28 @@ const data = {
       offset: '70',
     },
     {
-      label: 'News',
+      label: 'Our Fees',
+      path: '#pricing_section',
+      offset: '70',
+    },
+    {
+      label: 'Developers',
+      path: '#developers',
+      offset: '70',
+    },
+    {
+      label: 'Contact',
+      path: '#contact',
+      offset: '70',
+    },
+    {
+      label: 'Blog',
       path: '#news',
+      offset: '70',
+    },
+    {
+      label: 'Support +1 (800) 566-6003',
+      path: '#',
       offset: '70',
     },
   ],
@@ -45,19 +69,14 @@ const data = {
       offset: '70',
     },
     {
-      label: 'Sign Up',
+      label: 'Get Started',
       path: '#',
       offset: '70',
     },
   ],
   mobileMenuItems: [
     {
-      label: 'Home',
-      path: '#home',
-      offset: '70',
-    },
-    {
-      label: 'Services',
+      label: 'Why Kwikpay',
       path: '#services',
       offset: '70',
     },
@@ -67,8 +86,28 @@ const data = {
       offset: '70',
     },
     {
-      label: 'News',
+      label: 'Our Fees',
+      path: '#pricing_section',
+      offset: '70',
+    },
+    {
+      label: 'Developers',
+      path: '#developers_section',
+      offset: '70',
+    },
+    {
+      label: 'Contact',
+      path: '#contact',
+      offset: '70',
+    },
+    {
+      label: 'Blog',
       path: '#news',
+      offset: '70',
+    },
+    {
+      label: 'Support +1 (800) 566-6003',
+      path: '#',
       offset: '70',
     },
     {
@@ -77,7 +116,7 @@ const data = {
       offset: '70',
     },
     {
-      label: 'Sign Up',
+      label: 'Get Started',
       path: '#',
       offset: '70',
     },
@@ -86,19 +125,37 @@ const data = {
     {
       id: 1,
       icon: serviceIcon1,
-      title: 'For Individuals',
+      title: 'For Consumers',
       description: `We are commited to provide proper business solutions with reasonable pricing.`,
     },
     {
       id: 2,
       icon: serviceIcon2,
-      title: 'For Team',
+      title: 'For Business',
       description: `A day to day report about your ongoing business for proper understanding.`,
     },
     {
       id: 3,
       icon: serviceIcon3,
-      title: 'For Company',
+      title: 'For Enteprise',
+      description: `Proper Content Management is important to find out the real clients for your agencies.`,
+    },
+ {
+      id: 4,
+      icon: serviceIcon4,
+      title: 'Scalability',
+      description: `We are commited to provide proper business solutions with reasonable pricing.`,
+    },
+    {
+      id: 5,
+      icon: serviceIcon5,
+      title: 'Cheap',
+      description: `A day to day report about your ongoing business for proper understanding.`,
+    },
+    {
+      id: 6,
+      icon: serviceIcon6,
+      title: 'Compliant',
       description: `Proper Content Management is important to find out the real clients for your agencies.`,
     },
   ],
@@ -132,44 +189,44 @@ const data = {
     {
       id: 1,
       icon: featureIcon1,
-      title: 'ultimate Email  subscription',
+      title: 'Accept Payments',
       desc:
-        'To successfully engage with your subscribers, your newsletter must entice readers and encourage them.',
+        'Accept cards, alternative payment methods, bank transfers, Ewallets and more.',
     },
     {
       id: 2,
       icon: featureIcon2,
-      title: 'Bolt Performance',
+      title: 'Global Payouts',
       desc:
-        'LiteSpeed Web Server is a high-performance HTTP server and known for its high performance.',
+        'Perform mass global payouts to over 125+ countries by using only 1 single API call.',
     },
     {
       id: 3,
       icon: featureIcon3,
-      title: 'Secure Transaction',
+      title: 'Easy Onboarding',
       desc:
-        'Get your Secure Transaction delivered at home collect a sample from the your task.',
+        'Create compliant customer accounts with real-time KYC and other checks.',
     },
     {
       id: 4,
       icon: featureIcon4,
-      title: 'Multiple Options',
+      title: 'Fraud Prevention',
       desc:
-        'Client Satisfaction is our first priority and We are best at it and ongoing assistance',
+        'Continuously analyzing and halting threats and emerging forms of fraud so you don’t have to.',
     },
     {
       id: 5,
       icon: featureIcon5,
-      title: '5 Star Rating service',
+      title: 'Crypto & FX',
       desc:
-        'We have support team for 24/7 operation. They provide help at any time.',
+        'Grow your business with more customers without the risk by accepting digital currencies.',
     },
     {
       id: 6,
       icon: featureIcon6,
-      title: 'Integrated with Shopify',
+      title: 'Payment Integrations',
       desc:
-        'You can build any kind of E-commerce Shop with payment security tools.',
+        'Connect to popular shopping carts, ecommerce platforms, CRMs, and billing applications.',
     },
   ],
   posts: [
@@ -193,6 +250,7 @@ const data = {
       comments_count: 18,
     },
   ],
+
   aboutUs: [
     {
       id: 1,
@@ -270,4 +328,27 @@ const data = {
     },
   ],
 };
+export const SCREENSHOTS = [
+  {
+    icon: ic_monetization_on,
+    title: 'Budget Overview',
+    image: Screenshot2,
+  },
+  {
+    icon: ic_settings,
+    title: 'Create & Adjust',
+    image: Screenshot1,
+  },
+  {
+    icon: pieChart,
+    title: 'View Reports',
+    image: Screenshot2,
+  },
+  {
+    icon: briefcase,
+    title: 'Integrations',
+    image: Screenshot1,
+  },
+];
+
 export default data;

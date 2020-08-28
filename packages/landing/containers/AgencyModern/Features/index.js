@@ -30,7 +30,7 @@ const Features = () => {
             <Image src={feature} alt="Feature Image" />
           </div>
           <div className="content">
-            <Heading content="Meet our exciting features that make you wow 😮" />
+            <Heading content="Streamline your business operations" />
             <Text content="Build an incredible workplace and grow your business with all-in-one platform with amazing contents." />
             <Accordion preExpanded={[0]}>
               <Fragment>

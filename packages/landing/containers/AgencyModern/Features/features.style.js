@@ -65,18 +65,18 @@ export const ContentWrapper = styled.div`
       margin-top: 30px;
     }
     h2 {
-      font-size: 36px;
-      line-height: 1.52;
-      font-weight: 700;
-      letter-spacing: -1px;
-      max-width: 440px;
+      font-size: 48px;
+      line-height: 1.5;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      max-width: 550px;
       @media only screen and (max-width: 1440px) {
         margin-bottom: 15px;
-        font-size: 30px;
+        font-size: 36px;
       }
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
         margin-bottom: 15px;
-        font-size: 24px;
+        font-size: 28px;
         max-width: 100%;
         text-align: center;
       }
@@ -90,7 +90,7 @@ export const ContentWrapper = styled.div`
       }
     }
     p {
-      font-size: 15px;
+      font-size: 20px;
       line-height: 32px;
       max-width: 480px;
       @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -103,7 +103,7 @@ export const ContentWrapper = styled.div`
         text-align: center;
         line-height: 32px;
         max-width: 550px;
-        font-size: 15px;
+        font-size: 18px;
       }
       @media only screen and (max-width: 480px) {
         text-align: left;
@@ -128,21 +128,21 @@ export const ContentWrapper = styled.div`
 
       h4 {
         font-family: DM Sans;
-        font-size: 18px;
+        font-size: 24px;
         line-height: 30px;
         margin-bottom: 0;
         font-weight: 400;
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          font-size: 16px;
+          font-size: 18px;
           line-height: 24px;
         }
       }
       p {
         margin: 16px 0 0 0;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 2.1;
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          font-size: 14px;
+          font-size: 16px;
           margin: 12px 0 4px 0;
           text-align: left;
         }

@@ -37,7 +37,7 @@ const Navbar = () => {
         <Logo
           href="/agencymodern"
           logoSrc={LogoImage}
-          title="Crypto Modern"
+          title="Kwikpay"
           className="main-logo"
         />
         {/* end of logo */}

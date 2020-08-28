@@ -2,22 +2,22 @@ import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
 const SectionWrapper = styled.section`
-  background-color: #283742;
+  background-color: #fefefe;
   padding: 70px 0;
 `;
 
 export const SectionTitle = styled.div`
   text-align: center;
-  max-width: 500px;
+  max-width: 760px;
   width: 100%;
   margin: 0 auto;
   h2 {
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.9;
-    letter-spacing: -0.5px;
-    margin-bottom: 12px;
-    color: #ffffff;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: #333333;
     @media screen and (max-width: 1440px) {
       margin-bottom: 4px;
     }
@@ -28,9 +28,9 @@ export const SectionTitle = styled.div`
     }
   }
   p {
-    font-size: 15px;
+    font-size: 22px;
     line-height: 2.1;
-    color: #ffffff;
+    color: #333333;
     @media screen and (max-width: 1440px) {
       line-height: 2;
     }
@@ -66,16 +66,16 @@ export const FeatureWrapper = styled.div`
       margin-bottom: 28px;
     }
     h4 {
-      font-size: 18px;
+      font-size: 24px;
       line-height: 30px;
-      color: #ffffff;
+      color: #333333;
       @media screen and (max-width: 1440px) {
         margin-bottom: 10px;
       }
     }
     p {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 15px;
+      color: #333333;
+      font-size: 18px;
       line-height: 30px;
       @media screen and (max-width: 1440px) {
         line-height: 25px;

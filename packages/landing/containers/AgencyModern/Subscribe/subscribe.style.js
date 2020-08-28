@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { rgba } from 'polished';
 
 const SectionWrapper = styled.section`
-  background-color: #f6ebe6;
-  padding: 75px 0;
+  background-color: #212141;
+  padding: 35px 0;
   position: relative;
   z-index: 0;
   .illustration {
@@ -33,9 +33,9 @@ const SectionWrapper = styled.section`
 `;
 
 export const FooterInner = styled.div`
-  background-color: #ffffff;
+  background-color: transparent;
   border-radius: 15px;
-  padding: 60px;
+  padding: 40px;
   display: flex;
   align-items: center;
   @media only screen and (max-width: 1023px) {
@@ -53,23 +53,24 @@ export const FooterInner = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-right: 70px;
+  margin-right: 40px;
   @media only screen and (max-width: 1023px) {
     margin-right: 0;
   }
   h3 {
+    color: #fefefe;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 55px;
+    font-size: 45px;
+    line-height: 65px;
     letter-spacing: -0.5px;
     margin-bottom: 6px;
     @media only screen and (max-width: 600px) {
-      font-size: 24px;
-      line-height: 35px;
+      font-size: 28px;
+      line-height: 38px;
     }
   }
   p {
-    color: #343d48;
+    color: #ffffff;
     font-size: 16px;
     line-height: 30px;
   }
@@ -92,7 +93,7 @@ export const SubscriptionForm = styled.div`
     margin-right: 15px;
     @media only screen and (max-width: 480px) {
       margin-right: 0px;
-      margin-bottom: 15px;
+      margin-bottom: 2px;
     }
     input {
       background-color: #eff3f7;
