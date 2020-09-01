@@ -5,6 +5,6 @@
   force = false
 
  [build]
-  base    = "/packages"
-  publish = "dist"
+  base    = "packages/landing"
+  publish = "out"
   command = "npm run netlify-build"
