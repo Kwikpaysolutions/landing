@@ -1,8 +1,7 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
+  to = "/error"
+  status = 404
 
  [build]
   base    = "packages"
