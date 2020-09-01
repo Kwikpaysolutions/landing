@@ -7,4 +7,4 @@
  [build]
   base    = "/packages"
   publish = "dist"
-  command = "npm run next-build"
+  command = "npm run netlify-build"
