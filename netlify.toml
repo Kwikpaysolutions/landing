@@ -1,9 +1,10 @@
 [[redirects]]
   from = "/*"
-  to = "/error"
-  status = 404
+  to = "/index.html"
+  status = 200
+  force = false
 
  [build]
-  base    = "/packages/landing"
+  base    = "/packages"
   publish = "dist"
   command = "npm run now-build"
