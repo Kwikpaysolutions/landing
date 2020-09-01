@@ -4,6 +4,6 @@
   status = 404
 
  [build]
-  base    = "/"
+  base    = "/packages/landing"
   publish = "dist"
-  command = "npm run build"
+  command = "npm run now-build"
