@@ -7,4 +7,4 @@
  [build]
   base    = "/packages"
   publish = "dist"
-  command = "npm run now-build"
+  command = "npm run next-build"
