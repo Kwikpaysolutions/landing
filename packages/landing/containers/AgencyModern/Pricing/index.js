@@ -276,6 +276,38 @@ PricingSection.defaultProps = {
   },
   row: {
     flexBox: true,
+    margin: 38px 0 0;
+    @media only screen and (max-width: 991px) {
+      width: calc(50% - 30px);
+    }
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .service__item {
+    display: flex;
+    align-items: flex-start;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @media only screen and (max-width: 480px) {
+      align-items: center;
+    }
+
+    .service__image {
+      margin-right: 29px;
+      flex-shrink: 0;
+      @media only screen and (max-width: 1360px) {
+        margin-right: 20px;
+      }
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 15px;
+        margin-right: 0px;
+      }
+
     flexWrap: 'wrap',
     alignItems: 'center',
   },
@@ -343,7 +375,7 @@ PricingSection.defaultProps = {
     borderRadius: '4px',
     pl: '10px',
     pr: '10px',
-    colors: 'primary',
+    color: 'primary',
     width: '222px',
     maxWidth: '100%',
   },
@@ -355,7 +387,7 @@ PricingSection.defaultProps = {
     borderRadius: '4px',
     pl: '10px',
     pr: '10px',
-    colors: 'primaryWithBg',
+    color: 'primaryWithBg',
     width: '200px',
     maxWidth: '100%',
   },

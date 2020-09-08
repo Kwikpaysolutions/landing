@@ -26,7 +26,7 @@ export const BannerContent = styled.div`
   max-width: 40%;
   width: 100%;
   padding-top: 170px;
-  padding-bottom: 160px;
+  padding-bottom: 140px;
   @media only screen and (max-width: 1600px) {
     max-width: 40%;
     padding-top: 140px;
@@ -34,7 +34,7 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 1400px) {
     padding-top: 120px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     max-width: 46%;
   }
   @media only screen and (max-width: 1099px) {
@@ -42,7 +42,7 @@ export const BannerContent = styled.div`
   }
   @media only screen and (max-width: 768px) {
     padding-top: 120px;
-    padding-bottom: 90px;
+    padding-bottom: 90px;ß
   }
   @media only screen and (max-width: 480px) {
     padding-top: 120px;
