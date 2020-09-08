@@ -10,7 +10,7 @@ import FooterWrapper, { List, ListItem } from './footer.style';
 
 import LogoImage from 'common/src/assets/image/saasClassic/logo.png';
 
-import { FOOTER_WIDGET } from 'common/src/data/saasClassic';
+import { FOOTER_WIDGET } from 'common/src/data/SaasClassic';
 
 const Footer = ({
   row,

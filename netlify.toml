@@ -1,9 +1,10 @@
 [[redirects]]
   from = "/*"
-  to = "/error"
-  status = 404
+  to = "/index.html"
+  status = 200
+  force = false
 
  [build]
-  base    = "/"
-  publish = "dist"
-  command = "npm run build"
+  base    = "packages/landing"
+  publish = "out"
+  command = "npm run netlify-build"
