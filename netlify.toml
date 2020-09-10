@@ -3,8 +3,3 @@
   to = "/index.html"
   status = 200
   force = false
-
- [build]
-  base    = "packages/landing"
-  publish = "out"
-  command = "npm run netlify-build"
